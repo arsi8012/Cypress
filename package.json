@@ -1,0 +1,19 @@
+{
+  "name": "cypress1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run -b chrome --headed",
+    "testHeadedChrome": "npx cypress run -b chrome --headed -C cypress.env.json",
+    "testHeadlessChrome": "npx cypress run -b chrome",
+    "testHeadedElectron": "npx cypress run -b electron --headed -C cypress.json",
+    "testHeadlessElectron": "npx cypress run -b electron"
+  },
+  "author": "AOA",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "cypress": "^9.0.0"
+  }
+}
